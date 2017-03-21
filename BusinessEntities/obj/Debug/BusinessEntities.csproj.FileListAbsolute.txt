@@ -1,0 +1,5 @@
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\obj\Debug\BusinessEntities.pdb

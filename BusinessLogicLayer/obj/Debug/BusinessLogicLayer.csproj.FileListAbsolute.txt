@@ -1,0 +1,9 @@
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\bin\Debug\BusinessEntities.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb

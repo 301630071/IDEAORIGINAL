@@ -1,0 +1,7 @@
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

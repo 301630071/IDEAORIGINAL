@@ -1,1 +1,12 @@
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\WindowsApp.exe.config
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.csprojResolveAssemblyReference.cache
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.Properties.Resources.resources
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.csproj.GenerateResource.Cache
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\WindowsApp.exe
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\WindowsApp.pdb
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\BusinessEntities.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\BusinessLogicLayer.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\BusinessEntities.pdb
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.exe
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.pdb
