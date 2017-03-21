@@ -29,3 +29,10 @@ C:\Users\roge_\Source\Repos\IDEAORIGINAL\WindowsApp\obj\Debug\WindowsApp.csprojR
 C:\Users\roge_\Source\Repos\IDEAORIGINAL\WindowsApp\obj\Debug\WindowsApp.Properties.Resources.resources
 C:\Users\roge_\Source\Repos\IDEAORIGINAL\WindowsApp\obj\Debug\WindowsApp.csproj.GenerateResource.Cache
 C:\Users\roge_\Source\Repos\IDEAORIGINAL\WindowsApp\obj\Debug\WindowsApp.Login.resources
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\EntityFramework.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\MySql.Data.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\EntityFramework.xml
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.Login.resources

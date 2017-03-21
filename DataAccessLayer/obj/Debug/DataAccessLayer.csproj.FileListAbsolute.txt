@@ -19,3 +19,10 @@ C:\Users\roge_\Source\Repos\IDEAORIGINAL\DataAccessLayer\bin\Debug\EntityFramewo
 C:\Users\roge_\Source\Repos\IDEAORIGINAL\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\roge_\Source\Repos\IDEAORIGINAL\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\roge_\Source\Repos\IDEAORIGINAL\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\bin\Debug\MySql.Data.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml

@@ -15,3 +15,10 @@ C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessEntities\bin\Debug\EntityFramew
 C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
 C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\bin\Debug\EntityFramework.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\bin\Debug\MySql.Data.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\bin\Debug\EntityFramework.xml
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessEntities\bin\Debug\EntityFramework.SqlServer.xml
