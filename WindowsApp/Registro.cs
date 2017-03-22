@@ -18,7 +18,9 @@ namespace WindowsApp
             InitializeComponent();
 
             cboCarrera.DropDownStyle = ComboBoxStyle.DropDownList;
-            
+            cboCarrera.DataSource = BusinessLogicLayer.CarreraBLL.cargarComboBox();
+            cboCarrera.DisplayMember = "Nombre";
+            cboCarrera.ValueMember = "Id";
 
             cboGrado.DropDownStyle = ComboBoxStyle.DropDownList;
             cboGrado.Items.Add("PRIMERO");
@@ -36,12 +38,22 @@ namespace WindowsApp
             u.Nombre = txtNombre.Text.ToString();
             u.Apellido1 = txtApellidoP.Text.ToString();
             u.Apellido2 = txtApellidoM.Text.ToString();
-            u.IdCarrera = cboCarrera.SelectedIndex();
-            u.Grado = cboGrado.SelectedValue.ToString();
+            u.IdCarrera = Convert.ToInt32(cboCarrera.SelectedValue.ToString());
+            u.Grado = cboGrado.SelectedItem.ToString();
             u.Password1 = txtPassword1.Text.ToString();
             u.Password2 = txtPassword2.Text.ToString();
+            u.Correo = txtCorreo.Text.ToString();
 
-            //mensaje =
+            string mensaje = BusinessLogicLayer.UsuarioBLL.Registrar(u);
+
+            if (string.IsNullOrEmpty(mensaje))
+            {
+                MessageBox.Show("Alumno Registrado Exitosamente");   
+            }
+            else
+            {
+                MessageBox.Show(mensaje);
+            }
 
         }
     }

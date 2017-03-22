@@ -68,7 +68,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::WindowsApp.Properties.Resources.LogoFinal2;
-            this.pictureBox1.Location = new System.Drawing.Point(388, 86);
+            this.pictureBox1.Location = new System.Drawing.Point(366, 86);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(206, 93);
             this.pictureBox1.TabIndex = 1;
@@ -175,45 +175,40 @@
             this.txtMatricula.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatricula.Location = new System.Drawing.Point(371, 223);
             this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(243, 26);
+            this.txtMatricula.Size = new System.Drawing.Size(201, 26);
             this.txtMatricula.TabIndex = 10;
-            this.txtMatricula.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(371, 259);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(243, 26);
+            this.txtNombre.Size = new System.Drawing.Size(201, 26);
             this.txtNombre.TabIndex = 11;
-            this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtApellidoP
             // 
             this.txtApellidoP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoP.Location = new System.Drawing.Point(371, 295);
             this.txtApellidoP.Name = "txtApellidoP";
-            this.txtApellidoP.Size = new System.Drawing.Size(243, 26);
+            this.txtApellidoP.Size = new System.Drawing.Size(201, 26);
             this.txtApellidoP.TabIndex = 12;
-            this.txtApellidoP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtApellidoM
             // 
             this.txtApellidoM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoM.Location = new System.Drawing.Point(371, 331);
             this.txtApellidoM.Name = "txtApellidoM";
-            this.txtApellidoM.Size = new System.Drawing.Size(243, 26);
+            this.txtApellidoM.Size = new System.Drawing.Size(201, 26);
             this.txtApellidoM.TabIndex = 13;
-            this.txtApellidoM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPassword1
             // 
             this.txtPassword1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword1.Location = new System.Drawing.Point(371, 428);
             this.txtPassword1.Name = "txtPassword1";
-            this.txtPassword1.Size = new System.Drawing.Size(243, 26);
+            this.txtPassword1.Size = new System.Drawing.Size(201, 26);
             this.txtPassword1.TabIndex = 16;
-            this.txtPassword1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPassword1.UseSystemPasswordChar = true;
             // 
             // txtPassword2
@@ -221,9 +216,8 @@
             this.txtPassword2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword2.Location = new System.Drawing.Point(371, 463);
             this.txtPassword2.Name = "txtPassword2";
-            this.txtPassword2.Size = new System.Drawing.Size(243, 26);
+            this.txtPassword2.Size = new System.Drawing.Size(201, 26);
             this.txtPassword2.TabIndex = 17;
-            this.txtPassword2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPassword2.UseSystemPasswordChar = true;
             // 
             // txtCorreo
@@ -231,29 +225,30 @@
             this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.Location = new System.Drawing.Point(371, 497);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(243, 26);
+            this.txtCorreo.Size = new System.Drawing.Size(201, 26);
             this.txtCorreo.TabIndex = 18;
-            this.txtCorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cboCarrera
             // 
+            this.cboCarrera.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCarrera.FormattingEnabled = true;
-            this.cboCarrera.Location = new System.Drawing.Point(371, 367);
+            this.cboCarrera.Location = new System.Drawing.Point(371, 363);
             this.cboCarrera.Name = "cboCarrera";
-            this.cboCarrera.Size = new System.Drawing.Size(243, 21);
+            this.cboCarrera.Size = new System.Drawing.Size(201, 26);
             this.cboCarrera.TabIndex = 14;
             // 
             // cboGrado
             // 
+            this.cboGrado.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboGrado.FormattingEnabled = true;
-            this.cboGrado.Location = new System.Drawing.Point(371, 398);
+            this.cboGrado.Location = new System.Drawing.Point(371, 394);
             this.cboGrado.Name = "cboGrado";
-            this.cboGrado.Size = new System.Drawing.Size(243, 21);
+            this.cboGrado.Size = new System.Drawing.Size(201, 26);
             this.cboGrado.TabIndex = 15;
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(371, 544);
+            this.btnRegistrar.Location = new System.Drawing.Point(366, 544);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(102, 54);
             this.btnRegistrar.TabIndex = 19;
@@ -263,7 +258,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(512, 544);
+            this.btnSalir.Location = new System.Drawing.Point(479, 544);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(102, 54);
             this.btnSalir.TabIndex = 20;

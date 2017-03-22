@@ -70,19 +70,19 @@ namespace BusinessLogicLayer
             string msg1 = "Usuario Registrado";
 
 
-            if (string.IsNullOrEmpty(u.Matricula)) ;
+            if (string.IsNullOrEmpty(u.Matricula)) 
             {
                 return "Falta ingresar la Matricula";
             }
-            if (string.IsNullOrEmpty(u.Nombre)) ;
+            if (string.IsNullOrEmpty(u.Nombre)) 
             {
                 return "Falta ingresar el Nombre";
             }
-            if (string.IsNullOrEmpty(u.Apellido1)) ;
+            if (string.IsNullOrEmpty(u.Apellido1)) 
             {
                 return "Falta ingresar el Apellido Paterno";
             }
-            if (string.IsNullOrEmpty(u.Apellido2)) ;
+            if (string.IsNullOrEmpty(u.Apellido2)) 
             {
                 return "Falta ingresar el Apellido Materno";
             }
@@ -104,9 +104,23 @@ namespace BusinessLogicLayer
             }
             else
             {
+                string mensaje = "";
+                bool conexion = DataAccessLayer.UsuarioDAL.Registrar(u);
+
+
+                if (conexion == true)
+                {
+                    return "";
+                }
+                else
+                {
+                    mensaje = "No se pudo registrar correctamente";
+                    return mensaje;
+                }
 
             }
         }
+        #endregion
     }
 }
 

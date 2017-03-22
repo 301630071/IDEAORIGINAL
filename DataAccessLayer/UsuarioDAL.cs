@@ -80,7 +80,7 @@ namespace DataAccessLayer
                 sqlConn.Open();
 
                 //3. Crear el query que utilizaras
-                string query = "INSERT INTO Usuario (Matricula, Nombre, Apellido1, Apellido2, Password1, Password2, Correo) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @password1, @password2, @correo )";
+                string query = "INSERT INTO Usuario (Matricula, Nombre, Apellido1, Apellido2, IdCarrera, Grado, Password1, Password2, Correo) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @carrera, @grado, @password1, @password2, @correo )";
 
                 //4° - Crear el objeto comando al cual le pasas el query
                 //y la conexion para ejecutar el query antes mencionado
@@ -91,9 +91,12 @@ namespace DataAccessLayer
                 cmd.Parameters.AddWithValue("@nombre", u.Nombre);
                 cmd.Parameters.AddWithValue("@apellidoP", u.Apellido1);
                 cmd.Parameters.AddWithValue("@apellidoM", u.Apellido2);
+                cmd.Parameters.AddWithValue("@carrera", u.IdCarrera);
+                cmd.Parameters.AddWithValue("@grado", u.Grado);
                 cmd.Parameters.AddWithValue("@password1", u.Password1);
                 cmd.Parameters.AddWithValue("@password2", u.Password2);
                 cmd.Parameters.AddWithValue("@correo", u.Correo);
+
                 //6° - Ejecutar el query y guardar el resultado
                 int ENQ = cmd.ExecuteNonQuery();
 
