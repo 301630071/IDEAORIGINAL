@@ -109,6 +109,7 @@
   <ItemGroup>
     <Content Include="bin\Debug\WindowsApp.vshost.exe" />
     <Content Include="obj\Debug\WindowsApp.csproj.FileListAbsolute.txt" />
+    <None Include="Resources\Registro mini.png" />
     <None Include="Resources\Registro.png" />
     <None Include="Resources\LogoFinal2.png" />
     <None Include="Resources\Blog004.jpg" />
