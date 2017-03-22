@@ -57,6 +57,7 @@
             this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(298, 47);
             this.txtContraseña.TabIndex = 1;
+            this.txtContraseña.Text = "l";
             this.txtContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblUsuario
