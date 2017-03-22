@@ -28,61 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.lblContraseña = new System.Windows.Forms.Label();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lblMatricula = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
             this.llblRegistrarse = new System.Windows.Forms.LinkLabel();
             this.lblCreaTucuenta = new System.Windows.Forms.Label();
             this.btnEntrada = new System.Windows.Forms.Button();
             this.btnSalida = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtUsuario
+            // txtMatricula
             // 
-            this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(586, 178);
-            this.txtUsuario.Multiline = true;
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(298, 47);
-            this.txtUsuario.TabIndex = 0;
-            this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMatricula.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatricula.Location = new System.Drawing.Point(586, 178);
+            this.txtMatricula.Multiline = true;
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(298, 47);
+            this.txtMatricula.TabIndex = 0;
+            this.txtMatricula.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtContraseña
+            // txtPassword
             // 
-            this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(586, 359);
-            this.txtContraseña.Multiline = true;
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(298, 47);
-            this.txtContraseña.TabIndex = 1;
-            this.txtContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(586, 358);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(298, 47);
+            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lblUsuario
+            // lblMatricula
             // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.Color.White;
-            this.lblUsuario.Location = new System.Drawing.Point(667, 120);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(151, 44);
-            this.lblUsuario.TabIndex = 2;
-            this.lblUsuario.Text = "Usuario";
-            this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
+            this.lblMatricula.AutoSize = true;
+            this.lblMatricula.BackColor = System.Drawing.Color.Transparent;
+            this.lblMatricula.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatricula.ForeColor = System.Drawing.Color.White;
+            this.lblMatricula.Location = new System.Drawing.Point(667, 120);
+            this.lblMatricula.Name = "lblMatricula";
+            this.lblMatricula.Size = new System.Drawing.Size(188, 44);
+            this.lblMatricula.TabIndex = 2;
+            this.lblMatricula.Text = "Matricula";
             // 
-            // lblContraseña
+            // lblPassword
             // 
-            this.lblContraseña.AutoSize = true;
-            this.lblContraseña.BackColor = System.Drawing.Color.Transparent;
-            this.lblContraseña.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.ForeColor = System.Drawing.Color.White;
-            this.lblContraseña.Location = new System.Drawing.Point(622, 301);
-            this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(228, 44);
-            this.lblContraseña.TabIndex = 3;
-            this.lblContraseña.Text = "Contraseña";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.ForeColor = System.Drawing.Color.White;
+            this.lblPassword.Location = new System.Drawing.Point(667, 294);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(187, 44);
+            this.lblPassword.TabIndex = 3;
+            this.lblPassword.Text = "Password";
             // 
             // llblRegistrarse
             // 
@@ -95,6 +94,7 @@
             this.llblRegistrarse.TabIndex = 4;
             this.llblRegistrarse.TabStop = true;
             this.llblRegistrarse.Text = "Registrarse";
+            this.llblRegistrarse.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblRegistrarse_LinkClicked);
             // 
             // lblCreaTucuenta
             // 
@@ -117,6 +117,7 @@
             this.btnEntrada.TabIndex = 6;
             this.btnEntrada.Text = "Entrada";
             this.btnEntrada.UseVisualStyleBackColor = true;
+            this.btnEntrada.Click += new System.EventHandler(this.btnEntrada_Click);
             // 
             // btnSalida
             // 
@@ -139,10 +140,10 @@
             this.Controls.Add(this.btnEntrada);
             this.Controls.Add(this.lblCreaTucuenta);
             this.Controls.Add(this.llblRegistrarse);
-            this.Controls.Add(this.lblContraseña);
-            this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.txtContraseña);
-            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblMatricula);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtMatricula);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -155,10 +156,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.Label lblContraseña;
+        private System.Windows.Forms.TextBox txtMatricula;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label lblMatricula;
+        private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.LinkLabel llblRegistrarse;
         private System.Windows.Forms.Label lblCreaTucuenta;
         private System.Windows.Forms.Button btnEntrada;

@@ -36,3 +36,5 @@ C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\MySql.Data.dll
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\EntityFramework.xml
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.Login.resources
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\DataAccessLayer.dll
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\DataAccessLayer.pdb
