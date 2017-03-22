@@ -16,5 +16,10 @@ namespace WindowsApp
         {
             InitializeComponent();
         }
+
+        private void lblUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

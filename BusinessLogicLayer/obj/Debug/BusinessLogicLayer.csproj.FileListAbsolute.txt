@@ -7,3 +7,16 @@ C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\bin\Debug\DataAcce
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\bin\Debug\BusinessEntities.dll
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\bin\Debug\EntityFramework.dll
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\bin\Debug\MySql.Data.dll
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\bin\Debug\EntityFramework.xml
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\roge_\Source\Repos\IDEAORIGINAL\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb

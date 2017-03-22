@@ -65,6 +65,9 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -73,6 +76,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="bin\Debug\WindowsApp.exe.config" />
     <None Include="bin\Debug\WindowsApp.vshost.exe.config" />
@@ -96,6 +100,7 @@
   <ItemGroup>
     <Content Include="bin\Debug\WindowsApp.vshost.exe" />
     <Content Include="obj\Debug\WindowsApp.csproj.FileListAbsolute.txt" />
+    <None Include="Resources\Blog004.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
