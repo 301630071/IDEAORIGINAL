@@ -17,9 +17,26 @@ namespace WindowsApp
             InitializeComponent();
         }
 
-        private void lblUsuario_Click(object sender, EventArgs e)
+
+        private void llblRegistrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+        }
+
+        private void btnEntrada_Click(object sender, EventArgs e)
+        {
+            string matricula = txtMatricula.Text;
+            string contraseña = txtPassword.Text.ToString();
+            string mensaje = BusinessLogicLayer.UsuarioBLL.iniciarSesion(matricula, contraseña);
+
+            if (string.IsNullOrEmpty(mensaje))
+            {
+                MessageBox.Show("Bienvenido");
+            }
+            else
+            {
+                MessageBox.Show(mensaje);
+            }
         }
     }
 }
