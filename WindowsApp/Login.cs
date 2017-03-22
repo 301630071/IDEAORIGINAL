@@ -26,7 +26,8 @@ namespace WindowsApp
 
         private void llblRegistrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Registro abrir = new Registro();
+            abrir.Show();
         }
 
         private void btnEntrada_Click(object sender, EventArgs e)
