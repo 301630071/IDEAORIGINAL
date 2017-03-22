@@ -12,9 +12,15 @@ namespace WindowsApp
 {
     public partial class Login : Form
     {
+
         public Login()
         {
             InitializeComponent();
+
+
+            txtMatricula.MaxLength = 9;
+            txtPassword.MaxLength = 15;
+
         }
 
 
@@ -38,5 +44,30 @@ namespace WindowsApp
                 MessageBox.Show(mensaje);
             }
         }
+
+        private void txtMatricula_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if (char.IsNumber(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else if (char.IsControl(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    e.Handled = true;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
     }
 }
+

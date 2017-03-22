@@ -47,6 +47,7 @@
             this.txtMatricula.Size = new System.Drawing.Size(298, 47);
             this.txtMatricula.TabIndex = 0;
             this.txtMatricula.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMatricula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMatricula_KeyPress);
             // 
             // txtPassword
             // 
@@ -91,7 +92,7 @@
             this.llblRegistrarse.Location = new System.Drawing.Point(673, 710);
             this.llblRegistrarse.Name = "llblRegistrarse";
             this.llblRegistrarse.Size = new System.Drawing.Size(110, 23);
-            this.llblRegistrarse.TabIndex = 4;
+            this.llblRegistrarse.TabIndex = 8;
             this.llblRegistrarse.TabStop = true;
             this.llblRegistrarse.Text = "Registrarse";
             this.llblRegistrarse.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblRegistrarse_LinkClicked);
@@ -105,7 +106,7 @@
             this.lblCreaTucuenta.Location = new System.Drawing.Point(628, 669);
             this.lblCreaTucuenta.Name = "lblCreaTucuenta";
             this.lblCreaTucuenta.Size = new System.Drawing.Size(190, 28);
-            this.lblCreaTucuenta.TabIndex = 5;
+            this.lblCreaTucuenta.TabIndex = 7;
             this.lblCreaTucuenta.Text = "Crea tu Cuenta";
             // 
             // btnEntrada
@@ -114,7 +115,7 @@
             this.btnEntrada.Location = new System.Drawing.Point(568, 536);
             this.btnEntrada.Name = "btnEntrada";
             this.btnEntrada.Size = new System.Drawing.Size(127, 57);
-            this.btnEntrada.TabIndex = 6;
+            this.btnEntrada.TabIndex = 5;
             this.btnEntrada.Text = "Entrada";
             this.btnEntrada.UseVisualStyleBackColor = true;
             this.btnEntrada.Click += new System.EventHandler(this.btnEntrada_Click);
@@ -125,7 +126,7 @@
             this.btnSalida.Location = new System.Drawing.Point(781, 536);
             this.btnSalida.Name = "btnSalida";
             this.btnSalida.Size = new System.Drawing.Size(127, 57);
-            this.btnSalida.TabIndex = 7;
+            this.btnSalida.TabIndex = 6;
             this.btnSalida.Text = "Salida";
             this.btnSalida.UseVisualStyleBackColor = true;
             // 
