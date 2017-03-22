@@ -62,7 +62,7 @@
             this.lblMatricula.Name = "lblMatricula";
             this.lblMatricula.Size = new System.Drawing.Size(98, 23);
             this.lblMatricula.TabIndex = 0;
-            this.lblMatricula.Text = "Matricula";
+            this.lblMatricula.Text = "Matrícula";
             // 
             // pictureBox1
             // 
@@ -259,6 +259,7 @@
             this.btnRegistrar.TabIndex = 19;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // btnSalir
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessEntities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -60,5 +61,56 @@ namespace BusinessLogicLayer
 
         }
         #endregion
+
+        #region Registrar
+        public static string Registrar(Usuario u)
+        {
+            //Validación 1. 
+            //Verificar si el metodo viene con datos
+            string msg1 = "Usuario Registrado";
+
+
+            if (string.IsNullOrEmpty(u.Matricula)) ;
+            {
+                return "Falta ingresar la Matricula";
+            }
+            if (string.IsNullOrEmpty(u.Nombre)) ;
+            {
+                return "Falta ingresar el Nombre";
+            }
+            if (string.IsNullOrEmpty(u.Apellido1)) ;
+            {
+                return "Falta ingresar el Apellido Paterno";
+            }
+            if (string.IsNullOrEmpty(u.Apellido2)) ;
+            {
+                return "Falta ingresar el Apellido Materno";
+            }
+            if (string.IsNullOrEmpty(u.Grado))
+            {
+                return "Falta seleccionar tu grado";
+            }
+            if (string.IsNullOrEmpty(u.Password1))
+            {
+                return "Falta ingresar la contraseña";
+            }
+            if (string.IsNullOrEmpty(u.Password2))
+            {
+                return "Falta reingresar la contraseña";
+            }
+            if (string.IsNullOrEmpty(u.Correo))
+            {
+                return "Falta ingresar el Correo electronico";
+            }
+            else
+            {
+
+            }
+        }
     }
 }
+
+
+
+
+

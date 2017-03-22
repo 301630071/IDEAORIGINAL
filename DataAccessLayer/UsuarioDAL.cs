@@ -64,5 +64,57 @@ namespace DataAccessLayer
             }
         }
         #endregion
+
+
+        #region Registrar
+        public static bool Registrar(Usuario u)
+        {
+            try
+            {
+                //1. Creamos objeto conexion y le pasamos la cadena de conexión
+                //ubicada en el archivo App.Config
+                MySqlConnection sqlConn = new MySqlConnection(CONNECTIONSTRING);
+
+
+                //2. Abrir la conexion
+                sqlConn.Open();
+
+                //3. Crear el query que utilizaras
+                string query = "INSERT INTO Usuario (Matricula, Nombre, Apellido1, Apellido2, Password1, Password2, Correo) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @password1, @password2, @correo )";
+
+                //4° - Crear el objeto comando al cual le pasas el query
+                //y la conexion para ejecutar el query antes mencionado
+                MySqlCommand cmd = new MySqlCommand(query, sqlConn);
+
+                //5° - Agregar los parametros necesarios
+                cmd.Parameters.AddWithValue("@matricula", u.Matricula);
+                cmd.Parameters.AddWithValue("@nombre", u.Nombre);
+                cmd.Parameters.AddWithValue("@apellidoP", u.Apellido1);
+                cmd.Parameters.AddWithValue("@apellidoM", u.Apellido2);
+                cmd.Parameters.AddWithValue("@password1", u.Password1);
+                cmd.Parameters.AddWithValue("@password2", u.Password2);
+                cmd.Parameters.AddWithValue("@correo", u.Correo);
+                //6° - Ejecutar el query y guardar el resultado
+                int ENQ = cmd.ExecuteNonQuery();
+
+                //7° - Validar si contiene registros
+                if (ENQ > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+                sqlConn.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
     }
+    #endregion
+
 }
+
