@@ -66,7 +66,7 @@
             this.lblMatricula.BackColor = System.Drawing.Color.Transparent;
             this.lblMatricula.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMatricula.ForeColor = System.Drawing.Color.White;
-            this.lblMatricula.Location = new System.Drawing.Point(667, 120);
+            this.lblMatricula.Location = new System.Drawing.Point(656, 120);
             this.lblMatricula.Name = "lblMatricula";
             this.lblMatricula.Size = new System.Drawing.Size(188, 44);
             this.lblMatricula.TabIndex = 2;
@@ -78,7 +78,7 @@
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(667, 294);
+            this.lblPassword.Location = new System.Drawing.Point(656, 294);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(187, 44);
             this.lblPassword.TabIndex = 3;
@@ -122,13 +122,14 @@
             // 
             // btnSalida
             // 
-            this.btnSalida.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalida.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalida.Location = new System.Drawing.Point(781, 536);
             this.btnSalida.Name = "btnSalida";
             this.btnSalida.Size = new System.Drawing.Size(127, 57);
             this.btnSalida.TabIndex = 6;
             this.btnSalida.Text = "Salida";
             this.btnSalida.UseVisualStyleBackColor = true;
+            this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
             // 
             // Login
             // 

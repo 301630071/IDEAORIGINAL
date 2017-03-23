@@ -17,7 +17,6 @@ namespace WindowsApp
         {
             InitializeComponent();
 
-
             txtMatricula.MaxLength = 9;
             txtPassword.MaxLength = 15;
 
@@ -35,10 +34,18 @@ namespace WindowsApp
             string matricula = txtMatricula.Text;
             string contraseña = txtPassword.Text.ToString();
             string mensaje = BusinessLogicLayer.UsuarioBLL.iniciarSesion(matricula, contraseña);
+            
 
             if (string.IsNullOrEmpty(mensaje))
             {
-                MessageBox.Show("Bienvenido");
+                MessageBox.Show("Bienvenido al GYM");
+
+                bool registro = BusinessLogicLayer.RegistroBLL.MandarRegistro(true, matricula);
+
+                if (registro)
+                    MessageBox.Show("Exitoso");
+                else
+                    MessageBox.Show("Fallo");
             }
             else
             {
@@ -67,6 +74,30 @@ namespace WindowsApp
             {
 
                 throw;
+            }
+        }
+
+        private void btnSalida_Click(object sender, EventArgs e)
+        {
+            string matricula = txtMatricula.Text;
+            string contraseña = txtPassword.Text.ToString();
+            string mensaje = BusinessLogicLayer.UsuarioBLL.iniciarSesion(matricula, contraseña);
+
+
+            if (string.IsNullOrEmpty(mensaje))
+            {
+                MessageBox.Show("Excelente Trabajo, Sigue así");
+
+                bool registro = BusinessLogicLayer.RegistroBLL.MandarRegistro(false, matricula);
+
+                if (registro)
+                    MessageBox.Show("Exitoso");
+                else
+                    MessageBox.Show("Fallo");
+            }
+            else
+            {
+                MessageBox.Show(mensaje);
             }
         }
     }

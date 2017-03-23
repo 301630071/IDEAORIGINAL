@@ -177,6 +177,7 @@
             this.txtMatricula.Name = "txtMatricula";
             this.txtMatricula.Size = new System.Drawing.Size(201, 26);
             this.txtMatricula.TabIndex = 10;
+            this.txtMatricula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMatricula_KeyPress);
             // 
             // txtNombre
             // 
@@ -264,6 +265,7 @@
             this.btnSalir.TabIndex = 20;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Registro
             // 

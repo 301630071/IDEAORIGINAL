@@ -43,6 +43,7 @@ namespace DataAccessLayer
                 //5° - Agregar los parametros necesarios
                 cmd.Parameters.AddWithValue("@matricula", matricula);
                 cmd.Parameters.AddWithValue("@password", pwd);
+                
 
                 //6° - Ejecutar el query y guardar el resultado
                 MySqlDataReader dr = cmd.ExecuteReader();
@@ -65,6 +66,15 @@ namespace DataAccessLayer
         }
         #endregion
 
+        #region ObtenerIdUsuario
+        public static int obtenerIdUsuario(string Matricula)
+        {
+            //Creamos una variable tipo var haciendo 
+            var query = db.Usuarios.Where(u => u.Matricula == Matricula).Select(u => u.Id);
+            int id = query.FirstOrDefault();
+            return id;
+        }
+        #endregion
 
         #region Registrar
         public static bool Registrar(Usuario u)
@@ -111,6 +121,7 @@ namespace DataAccessLayer
                 }
                 sqlConn.Close();
             }
+
             catch (Exception ex)
             {
                 return false;

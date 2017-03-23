@@ -9,6 +9,11 @@ namespace BusinessLogicLayer
 {
     public class UsuarioBLL
     {
+        public static int obtenerIdUsuario(string Matricula)
+        {
+            return DataAccessLayer.UsuarioDAL.obtenerIdUsuario(Matricula);
+        }
+
         #region iniciarSesion
         public static string iniciarSesion(string matricula, string pwd)
         {
