@@ -63,9 +63,39 @@ namespace WindowsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AdminFinal {
+            get {
+                object obj = ResourceManager.GetObject("AdminFinal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AdminFinal1 {
+            get {
+                object obj = ResourceManager.GetObject("AdminFinal1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Blog004 {
             get {
                 object obj = ResourceManager.GetObject("Blog004", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LateralAdmin {
+            get {
+                object obj = ResourceManager.GetObject("LateralAdmin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

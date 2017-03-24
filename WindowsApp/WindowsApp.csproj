@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAgregar.Designer.cs">
+      <DependentUpon>AdminAgregar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,15 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="VenAdminP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VenAdminP.Designer.cs">
+      <DependentUpon>VenAdminP.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAgregar.resx">
+      <DependentUpon>AdminAgregar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +101,9 @@
     </Compile>
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VenAdminP.resx">
+      <DependentUpon>VenAdminP.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\WindowsApp.exe.config" />
     <None Include="bin\Debug\WindowsApp.vshost.exe.config" />
@@ -109,6 +127,9 @@
   <ItemGroup>
     <Content Include="bin\Debug\WindowsApp.vshost.exe" />
     <Content Include="obj\Debug\WindowsApp.csproj.FileListAbsolute.txt" />
+    <None Include="Resources\LateralAdmin.png" />
+    <None Include="Resources\AdminFinal1.png" />
+    <None Include="Resources\AdminFinal.png" />
     <None Include="Resources\Registro mini.png" />
     <None Include="Resources\Registro.png" />
     <None Include="Resources\LogoFinal2.png" />

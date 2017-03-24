@@ -39,3 +39,5 @@ C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.Login
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\DataAccessLayer.dll
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\bin\Debug\DataAccessLayer.pdb
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.Registro.resources
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.VenAdminP.resources
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.AdminAgregar.resources

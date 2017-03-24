@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogicLayer
 {
+
     public class UsuarioBLL
     {
         public static int obtenerIdUsuario(string Matricula)
@@ -106,6 +107,14 @@ namespace BusinessLogicLayer
             if (string.IsNullOrEmpty(u.Correo))
             {
                 return "Falta ingresar el Correo electronico";
+            }
+            if (u.Password1 != u.Password2)
+            {
+                return "Las contraseñas no coinciden";
+            }
+            if (u.Password1.Length <= 7)
+            {
+                return "El password debe contener al menos 8 caracteres";
             }
             else
             {
