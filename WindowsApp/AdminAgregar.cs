@@ -69,6 +69,7 @@ namespace WindowsApp
                 u.Password1 = txtPassword1.Text.ToString();
                 u.Password2 = txtPassword2.Text.ToString();
                 u.Correo = txtCorreo.Text.ToString();
+                u.Estado = 1;
                 #endregion
 
                 string mensaje = BusinessLogicLayer.UsuarioBLL.Registrar(u);

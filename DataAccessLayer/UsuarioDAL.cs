@@ -91,7 +91,7 @@ namespace DataAccessLayer
                 sqlConn.Open();
 
                 //3. Crear el query que utilizaras
-                string query = "INSERT INTO Usuario (Matricuka, Nombre, Apellido1, Apellido2, IdCampus, IdCarrera, Grado, Password1, Password2, Correo) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @campus, @carrera, @grado, @password1, @password2, @correo )";
+                string query = "INSERT INTO Usuario (Matricula, Nombre, Apellido1, Apellido2, IdCampus, IdCarrera, Grado, Password1, Password2, Correo, Estado) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @campus, @carrera, @grado, @password1, @password2, @correo, @estado )";
 
                 //4° - Crear el objeto comando al cual le pasas el query
                 //y la conexion para ejecutar el query antes mencionado
@@ -108,6 +108,7 @@ namespace DataAccessLayer
                 cmd.Parameters.AddWithValue("@password1", u.Password1);
                 cmd.Parameters.AddWithValue("@password2", u.Password2);
                 cmd.Parameters.AddWithValue("@correo", u.Correo);
+                cmd.Parameters.AddWithValue("@estado", u.Estado);
 
                 //6° - Ejecutar el query y guardar el resultado
                 int ENQ = cmd.ExecuteNonQuery();
@@ -186,7 +187,7 @@ namespace DataAccessLayer
         #endregion
 
         #region Consultar
-        
+
         public static DataTable Consultar(Usuario u)
         {
             var dt = new DataTable();
@@ -219,12 +220,12 @@ namespace DataAccessLayer
                 cmd.Parameters.AddWithValue("@password2", u.Password2);
                 cmd.Parameters.AddWithValue("@correo", u.Correo);
 
-                
+
 
                 //6° - Ejecutar el query y guardar el resultado
                 MySqlDataReader ENQ = cmd.ExecuteReader();
 
-                
+
 
 
                 //7° - Validar si contiene registros
@@ -232,16 +233,16 @@ namespace DataAccessLayer
                 {
 
                     dt.Load(ENQ);
-                    
+
                     return dt;
 
-                    }
-                    else
-                    {
-                    return dt;
-                    }
-                    sqlConn.Close();
                 }
+                else
+                {
+                    return dt;
+                }
+                sqlConn.Close();
+            }
 
             catch (Exception ex)
             {
@@ -265,7 +266,7 @@ namespace DataAccessLayer
                 sqlConn.Open();
 
                 //3. Crear el query que utilizaras
-                string query = "select u.Matricula as MATRICULA, u.Nombre as NOMBRE, u.Apellido1 as APELLIDO_PATERNO, u.Apellido2 as APELLIDO_MATERNO, u.IdCampus as CAMPUS, u.IdCarrera as CARRERA, u.Grado as GRADO, r.fechayhora as FECHA_HORA, IF(r.TipoRegistro = 1, 'Entrada', 'Salida')as TIPO from Registro r inner join usuario u on r.IdUsuario = u.Id where u.Matricula = @matricula"; 
+                string query = "select u.Matricula as MATRICULA, u.Nombre as NOMBRE, u.Apellido1 as APELLIDO_PATERNO, u.Apellido2 as APELLIDO_MATERNO, u.IdCampus as CAMPUS, u.IdCarrera as CARRERA, u.Grado as GRADO, r.fechayhora as FECHA_HORA, IF(r.TipoRegistro = 1, 'Entrada', 'Salida')as TIPO from Registro r inner join usuario u on r.IdUsuario = u.Id where u.Matricula = @matricula";
 
                 //4° - Crear el objeto comando al cual le pasas el query
                 //y la conexion para ejecutar el query antes mencionado
@@ -273,7 +274,7 @@ namespace DataAccessLayer
 
                 //5° - Agregar los parametros necesarios
                 cmd.Parameters.AddWithValue("@matricula", u.Matricula);
-                
+
 
                 //6° - Ejecutar el query y guardar el resultado
                 MySqlDataReader ENQ = cmd.ExecuteReader();
@@ -284,7 +285,7 @@ namespace DataAccessLayer
                 {
 
                     dt.Load(ENQ);
-                    
+
                     return dt;
 
                 }
@@ -300,9 +301,109 @@ namespace DataAccessLayer
                 return dt;
             }
         }
-    #endregion
+        #endregion
+
+        #region Consultar Alumno
+        public static DataTable ConsultarAlumno(Usuario u)
+        {
+            var dt = new DataTable();
+            try
+            {
+                //1. Creamos objeto conexion y le pasamos la cadena de conexión
+                //ubicada en el archivo App.Config
+                MySqlConnection sqlConn = new MySqlConnection(CONNECTIONSTRING);
+
+
+                //2. Abrir la conexion
+                sqlConn.Open();
+
+                //3. Crear el query que utilizaras
+                string query = "SELECT u.Matricula as MATRICULA, u.Nombre as NOMBRE, u.Apellido1 as APELLIDO_PATERNO, u.Apellido2 as APELLIDO_MATERNO, u.IdCampus as CAMPUS, u.IdCarrera as CARRERA, u.Grado as GRADO FROM Usuario u WHERE u.Matricula = @matricula AND u.Estado =  @estado";
+
+                //4° - Crear el objeto comando al cual le pasas el query
+                //y la conexion para ejecutar el query antes mencionado
+                MySqlCommand cmd = new MySqlCommand(query, sqlConn);
+
+                //5° - Agregar los parametros necesarios
+                cmd.Parameters.AddWithValue("@matricula", u.Matricula);
+                cmd.Parameters.AddWithValue("@estado", u.Estado);
+
+
+                //6° - Ejecutar el query y guardar el resultado
+                MySqlDataReader ENQ = cmd.ExecuteReader();
+
+
+                //7° - Validar si contiene registros
+                if (ENQ.HasRows)
+                {
+
+                    dt.Load(ENQ);
+
+                    return dt;
+
+                }
+                else
+                {
+                    return dt;
+                }
+                sqlConn.Close();
+            }
+
+            catch (Exception ex)
+            {
+                return dt;
+            }
+        }
+        #endregion
+
+        #region Eliminar
+        public static bool Eliminar(Usuario u)
+        {
+            try
+            {
+                //1. Creamos objeto conexion y le pasamos la cadena de conexión
+                //ubicada en el archivo App.Config
+                MySqlConnection sqlConn = new MySqlConnection(CONNECTIONSTRING);
+
+
+                //2. Abrir la conexion
+                sqlConn.Open();
+
+                //3. Crear el query que utilizaras
+                string query = "UPDATE Usuario SET Estado = @estado";
+
+                //4° - Crear el objeto comando al cual le pasas el query
+                //y la conexion para ejecutar el query antes mencionado
+                MySqlCommand cmd = new MySqlCommand(query, sqlConn);
+
+                //5° - Agregar los parametros necesarios
+                //cmd.Parameters.AddWithValue("@matricula", u.Matricula);
+                cmd.Parameters.AddWithValue("@estado", u.Estado);
+
+                //6° - Ejecutar el query y guardar el resultado
+                int ENQ = cmd.ExecuteNonQuery();
+
+                //7° - Validar si contiene registros
+                if (ENQ > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+                sqlConn.Close();
+            }
+
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        #endregion
     }
-
-
 }
+
+
+
 

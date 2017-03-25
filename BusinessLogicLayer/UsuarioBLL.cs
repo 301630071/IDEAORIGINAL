@@ -139,6 +139,7 @@ namespace BusinessLogicLayer
         }
         #endregion
 
+        #region Modificar
         public static string Modificar(Usuario u)
         {
             //Validación 1. 
@@ -192,6 +193,8 @@ namespace BusinessLogicLayer
 
             }
         }
+        #endregion
+
         #region Consultar
         public static DataTable Consultar(Usuario u)
         {
@@ -210,5 +213,32 @@ namespace BusinessLogicLayer
         }
         #endregion
 
+        #region ConsultarAlumno
+        public static DataTable ConsultarAlumno(Usuario u)
+        {
+            string mensaje = "";
+            DataTable conexion = DataAccessLayer.UsuarioDAL.ConsultarAlumno(u);
+
+            return conexion;
+        }
+        #endregion
+
+        #region Eliminar
+        public static string Eliminar(Usuario u)
+        {
+            string mensaje = "";
+            bool conexion = DataAccessLayer.UsuarioDAL.Eliminar(u);
+
+            if (conexion == true)
+            {
+                return "";
+            }
+            else
+            {
+                mensaje = "No se pudo Eliminar al Usuario";
+                return mensaje;
+            }
+        }
+        #endregion
     }
 }

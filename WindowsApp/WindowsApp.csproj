@@ -72,6 +72,12 @@
     <Compile Include="ConsultarAl.Designer.cs">
       <DependentUpon>ConsultarAl.cs</DependentUpon>
     </Compile>
+    <Compile Include="EliminarRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarRegistro.Designer.cs">
+      <DependentUpon>EliminarRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarAl.resx">
       <DependentUpon>ConsultarAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarRegistro.resx">
+      <DependentUpon>EliminarRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

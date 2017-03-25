@@ -40,5 +40,11 @@ namespace WindowsApp
             ModificarRegistro mr = new ModificarRegistro();
             mr.Show();
         }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarRegistro er = new EliminarRegistro();
+            er.Show();
+        }
     }
 }

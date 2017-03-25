@@ -19,5 +19,7 @@ namespace BusinessEntities
         public string Correo { get; set; }
         public int IdCampus { get; set; }
         public int IdCarrera { get; set; }
+        public Byte Estado { get; set; }
+
     }
 }
