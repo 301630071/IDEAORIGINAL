@@ -29,9 +29,16 @@ namespace WindowsApp
             bus.Show();
         }
 
+        private void porAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultarAl con = new ConsultarAl();
+            con.Show();
+        }
+
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            ModificarRegistro mr = new ModificarRegistro();
+            mr.Show();
         }
     }
 }

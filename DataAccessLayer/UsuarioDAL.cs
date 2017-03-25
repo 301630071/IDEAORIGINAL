@@ -91,7 +91,7 @@ namespace DataAccessLayer
                 sqlConn.Open();
 
                 //3. Crear el query que utilizaras
-                string query = "INSERT INTO Usuario (Matricula, Nombre, Apellido1, Apellido2, IdCampus, IdCarrera, Grado, Password1, Password2, Correo) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @campus, @carrera, @grado, @password1, @password2, @correo )";
+                string query = "INSERT INTO Usuario (Matricuka, Nombre, Apellido1, Apellido2, IdCampus, IdCarrera, Grado, Password1, Password2, Correo) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @campus, @carrera, @grado, @password1, @password2, @correo )";
 
                 //4° - Crear el objeto comando al cual le pasas el query
                 //y la conexion para ejecutar el query antes mencionado
@@ -145,14 +145,14 @@ namespace DataAccessLayer
                 sqlConn.Open();
 
                 //3. Crear el query que utilizaras
-                string query = "UPDATE Usuario SET Matricula = @matricula  , Nombre = @nombre, Apellido1 = @apellidoP, Apellido2 = @apellidoM, IdCampus = @campus, IdCarrera = @carrera, Grado = @grado, Password1 = @password1, Password2 = @password2, Correo = @correo";
+                string query = "UPDATE Usuario SET Nombre = @nombre, Apellido1 = @apellidoP, Apellido2 = @apellidoM, IdCampus = @campus, IdCarrera = @carrera, Grado = @grado, Password1 = @password1, Password2 = @password2, Correo = @correo";
 
                 //4° - Crear el objeto comando al cual le pasas el query
                 //y la conexion para ejecutar el query antes mencionado
                 MySqlCommand cmd = new MySqlCommand(query, sqlConn);
 
                 //5° - Agregar los parametros necesarios
-                cmd.Parameters.AddWithValue("@matricula", u.Matricula);
+                //cmd.Parameters.AddWithValue("@matricula", u.Matricula);
                 cmd.Parameters.AddWithValue("@nombre", u.Nombre);
                 cmd.Parameters.AddWithValue("@apellidoP", u.Apellido1);
                 cmd.Parameters.AddWithValue("@apellidoM", u.Apellido2);

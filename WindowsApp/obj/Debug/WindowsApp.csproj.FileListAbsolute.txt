@@ -43,3 +43,4 @@ C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.VenAd
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.AdminAgregar.resources
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.BuscarRegistro.resources
 C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.ConsultarAl.resources
+C:\Users\Eduardo\Source\Repos\IDEAOriginal\WindowsApp\obj\Debug\WindowsApp.ModificarRegistro.resources

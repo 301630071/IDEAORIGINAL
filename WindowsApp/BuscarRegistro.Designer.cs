@@ -35,20 +35,20 @@
             this.gboBuscar = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.gboRegistro = new System.Windows.Forms.GroupBox();
-            this.txtApellido1 = new System.Windows.Forms.TextBox();
-            this.lblApellidoP = new System.Windows.Forms.Label();
-            this.txtApellido2 = new System.Windows.Forms.TextBox();
-            this.lblApellidoM = new System.Windows.Forms.Label();
-            this.txtCampus = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCarrera = new System.Windows.Forms.TextBox();
-            this.lblCarrera = new System.Windows.Forms.Label();
-            this.txtPassword1 = new System.Windows.Forms.TextBox();
-            this.lblPassword1 = new System.Windows.Forms.Label();
-            this.txtGrado = new System.Windows.Forms.TextBox();
-            this.lblGrado = new System.Windows.Forms.Label();
             this.lblCorreo = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtGrado = new System.Windows.Forms.TextBox();
+            this.lblGrado = new System.Windows.Forms.Label();
+            this.lblPassword1 = new System.Windows.Forms.Label();
+            this.txtPassword1 = new System.Windows.Forms.TextBox();
+            this.txtCarrera = new System.Windows.Forms.TextBox();
+            this.lblCarrera = new System.Windows.Forms.Label();
+            this.txtCampus = new System.Windows.Forms.TextBox();
+            this.lblCampus = new System.Windows.Forms.Label();
+            this.txtApellido2 = new System.Windows.Forms.TextBox();
+            this.lblApellidoM = new System.Windows.Forms.Label();
+            this.txtApellido1 = new System.Windows.Forms.TextBox();
+            this.lblApellidoP = new System.Windows.Forms.Label();
             this.gboBuscar.SuspendLayout();
             this.gboRegistro.SuspendLayout();
             this.SuspendLayout();
@@ -119,7 +119,7 @@
             this.gboRegistro.Controls.Add(this.txtCarrera);
             this.gboRegistro.Controls.Add(this.lblCarrera);
             this.gboRegistro.Controls.Add(this.txtCampus);
-            this.gboRegistro.Controls.Add(this.label3);
+            this.gboRegistro.Controls.Add(this.lblCampus);
             this.gboRegistro.Controls.Add(this.txtApellido2);
             this.gboRegistro.Controls.Add(this.lblApellidoM);
             this.gboRegistro.Controls.Add(this.txtApellido1);
@@ -134,85 +134,21 @@
             this.gboRegistro.TabStop = false;
             this.gboRegistro.Text = "Registro";
             // 
-            // txtApellido1
+            // lblCorreo
             // 
-            this.txtApellido1.Location = new System.Drawing.Point(148, 49);
-            this.txtApellido1.Name = "txtApellido1";
-            this.txtApellido1.Size = new System.Drawing.Size(150, 22);
-            this.txtApellido1.TabIndex = 4;
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Location = new System.Drawing.Point(27, 222);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(49, 17);
+            this.lblCorreo.TabIndex = 17;
+            this.lblCorreo.Text = "Correo";
             // 
-            // lblApellidoP
+            // txtCorreo
             // 
-            this.lblApellidoP.AutoSize = true;
-            this.lblApellidoP.Location = new System.Drawing.Point(27, 52);
-            this.lblApellidoP.Name = "lblApellidoP";
-            this.lblApellidoP.Size = new System.Drawing.Size(108, 17);
-            this.lblApellidoP.TabIndex = 5;
-            this.lblApellidoP.Text = "Apellido Paterno";
-            // 
-            // txtApellido2
-            // 
-            this.txtApellido2.Location = new System.Drawing.Point(148, 77);
-            this.txtApellido2.Name = "txtApellido2";
-            this.txtApellido2.Size = new System.Drawing.Size(150, 22);
-            this.txtApellido2.TabIndex = 6;
-            // 
-            // lblApellidoM
-            // 
-            this.lblApellidoM.AutoSize = true;
-            this.lblApellidoM.Location = new System.Drawing.Point(27, 82);
-            this.lblApellidoM.Name = "lblApellidoM";
-            this.lblApellidoM.Size = new System.Drawing.Size(112, 17);
-            this.lblApellidoM.TabIndex = 7;
-            this.lblApellidoM.Text = "Apellido Materno";
-            // 
-            // txtCampus
-            // 
-            this.txtCampus.Location = new System.Drawing.Point(148, 105);
-            this.txtCampus.Name = "txtCampus";
-            this.txtCampus.Size = new System.Drawing.Size(150, 22);
-            this.txtCampus.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 110);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 17);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Campus";
-            // 
-            // txtCarrera
-            // 
-            this.txtCarrera.Location = new System.Drawing.Point(148, 133);
-            this.txtCarrera.Name = "txtCarrera";
-            this.txtCarrera.Size = new System.Drawing.Size(150, 22);
-            this.txtCarrera.TabIndex = 10;
-            // 
-            // lblCarrera
-            // 
-            this.lblCarrera.AutoSize = true;
-            this.lblCarrera.Location = new System.Drawing.Point(27, 138);
-            this.lblCarrera.Name = "lblCarrera";
-            this.lblCarrera.Size = new System.Drawing.Size(53, 17);
-            this.lblCarrera.TabIndex = 11;
-            this.lblCarrera.Text = "Carrera";
-            // 
-            // txtPassword1
-            // 
-            this.txtPassword1.Location = new System.Drawing.Point(148, 189);
-            this.txtPassword1.Name = "txtPassword1";
-            this.txtPassword1.Size = new System.Drawing.Size(150, 22);
-            this.txtPassword1.TabIndex = 12;
-            // 
-            // lblPassword1
-            // 
-            this.lblPassword1.AutoSize = true;
-            this.lblPassword1.Location = new System.Drawing.Point(27, 194);
-            this.lblPassword1.Name = "lblPassword1";
-            this.lblPassword1.Size = new System.Drawing.Size(63, 17);
-            this.lblPassword1.TabIndex = 13;
-            this.lblPassword1.Text = "Password";
+            this.txtCorreo.Location = new System.Drawing.Point(148, 217);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(150, 22);
+            this.txtCorreo.TabIndex = 16;
             // 
             // txtGrado
             // 
@@ -230,21 +166,85 @@
             this.lblGrado.TabIndex = 15;
             this.lblGrado.Text = "Grado";
             // 
-            // lblCorreo
+            // lblPassword1
             // 
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(27, 222);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(49, 17);
-            this.lblCorreo.TabIndex = 17;
-            this.lblCorreo.Text = "Correo";
+            this.lblPassword1.AutoSize = true;
+            this.lblPassword1.Location = new System.Drawing.Point(27, 194);
+            this.lblPassword1.Name = "lblPassword1";
+            this.lblPassword1.Size = new System.Drawing.Size(63, 17);
+            this.lblPassword1.TabIndex = 13;
+            this.lblPassword1.Text = "Password";
             // 
-            // txtCorreo
+            // txtPassword1
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(148, 217);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(150, 22);
-            this.txtCorreo.TabIndex = 16;
+            this.txtPassword1.Location = new System.Drawing.Point(148, 189);
+            this.txtPassword1.Name = "txtPassword1";
+            this.txtPassword1.Size = new System.Drawing.Size(150, 22);
+            this.txtPassword1.TabIndex = 12;
+            // 
+            // txtCarrera
+            // 
+            this.txtCarrera.Location = new System.Drawing.Point(148, 133);
+            this.txtCarrera.Name = "txtCarrera";
+            this.txtCarrera.Size = new System.Drawing.Size(150, 22);
+            this.txtCarrera.TabIndex = 10;
+            // 
+            // lblCarrera
+            // 
+            this.lblCarrera.AutoSize = true;
+            this.lblCarrera.Location = new System.Drawing.Point(27, 138);
+            this.lblCarrera.Name = "lblCarrera";
+            this.lblCarrera.Size = new System.Drawing.Size(53, 17);
+            this.lblCarrera.TabIndex = 11;
+            this.lblCarrera.Text = "Carrera";
+            // 
+            // txtCampus
+            // 
+            this.txtCampus.Location = new System.Drawing.Point(148, 105);
+            this.txtCampus.Name = "txtCampus";
+            this.txtCampus.Size = new System.Drawing.Size(150, 22);
+            this.txtCampus.TabIndex = 8;
+            // 
+            // lblCampus
+            // 
+            this.lblCampus.AutoSize = true;
+            this.lblCampus.Location = new System.Drawing.Point(27, 110);
+            this.lblCampus.Name = "lblCampus";
+            this.lblCampus.Size = new System.Drawing.Size(56, 17);
+            this.lblCampus.TabIndex = 9;
+            this.lblCampus.Text = "Campus";
+            // 
+            // txtApellido2
+            // 
+            this.txtApellido2.Location = new System.Drawing.Point(148, 77);
+            this.txtApellido2.Name = "txtApellido2";
+            this.txtApellido2.Size = new System.Drawing.Size(150, 22);
+            this.txtApellido2.TabIndex = 6;
+            // 
+            // lblApellidoM
+            // 
+            this.lblApellidoM.AutoSize = true;
+            this.lblApellidoM.Location = new System.Drawing.Point(27, 82);
+            this.lblApellidoM.Name = "lblApellidoM";
+            this.lblApellidoM.Size = new System.Drawing.Size(112, 17);
+            this.lblApellidoM.TabIndex = 7;
+            this.lblApellidoM.Text = "Apellido Materno";
+            // 
+            // txtApellido1
+            // 
+            this.txtApellido1.Location = new System.Drawing.Point(148, 49);
+            this.txtApellido1.Name = "txtApellido1";
+            this.txtApellido1.Size = new System.Drawing.Size(150, 22);
+            this.txtApellido1.TabIndex = 4;
+            // 
+            // lblApellidoP
+            // 
+            this.lblApellidoP.AutoSize = true;
+            this.lblApellidoP.Location = new System.Drawing.Point(27, 52);
+            this.lblApellidoP.Name = "lblApellidoP";
+            this.lblApellidoP.Size = new System.Drawing.Size(108, 17);
+            this.lblApellidoP.TabIndex = 5;
+            this.lblApellidoP.Text = "Apellido Paterno";
             // 
             // BuscarRegistro
             // 
@@ -281,7 +281,7 @@
         private System.Windows.Forms.TextBox txtCarrera;
         private System.Windows.Forms.Label lblCarrera;
         private System.Windows.Forms.TextBox txtCampus;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCampus;
         private System.Windows.Forms.TextBox txtApellido2;
         private System.Windows.Forms.Label lblApellidoM;
         private System.Windows.Forms.TextBox txtApellido1;

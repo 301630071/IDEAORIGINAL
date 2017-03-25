@@ -139,6 +139,59 @@ namespace BusinessLogicLayer
         }
         #endregion
 
+        public static string Modificar(Usuario u)
+        {
+            //Validación 1. 
+            //Verificar si el metodo viene con datos
+            string msg1 = "Usuario Registrado";
+
+
+            if (string.IsNullOrEmpty(u.Nombre))
+            {
+                return "Falta ingresar el Nombre";
+            }
+            if (string.IsNullOrEmpty(u.Apellido1))
+            {
+                return "Falta ingresar el Apellido Paterno";
+            }
+            if (string.IsNullOrEmpty(u.Apellido2))
+            {
+                return "Falta ingresar el Apellido Materno";
+            }
+            if (string.IsNullOrEmpty(u.Grado))
+            {
+                return "Falta seleccionar tu grado";
+            }
+            if (string.IsNullOrEmpty(u.Password1))
+            {
+                return "Falta ingresar la contraseña";
+            }
+            if (string.IsNullOrEmpty(u.Correo))
+            {
+                return "Falta ingresar el Correo electronico";
+            }
+            if (u.Password1.Length <= 7)
+            {
+                return "El password debe contener al menos 8 caracteres";
+            }
+            else
+            {
+                string mensaje = "";
+                bool conexion = DataAccessLayer.UsuarioDAL.Modificar(u);
+
+
+                if (conexion == true)
+                {
+                    return "";
+                }
+                else
+                {
+                    mensaje = "No se pudo registrar correctamente";
+                    return mensaje;
+                }
+
+            }
+        }
         #region Consultar
         public static DataTable Consultar(Usuario u)
         {

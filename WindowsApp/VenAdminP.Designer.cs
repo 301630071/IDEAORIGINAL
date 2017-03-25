@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VenAdminP));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,13 +37,11 @@
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.matriculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.díaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.añoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matrículaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catalogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnosRegistradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matrículaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.porAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,27 +73,27 @@
             this.eliminarToolStripMenuItem});
             this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
             this.registrarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.registrarToolStripMenuItem.Text = "Registrar";
+            this.registrarToolStripMenuItem.Text = "Administrar";
             // 
             // crearToolStripMenuItem
             // 
             this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.crearToolStripMenuItem.Text = "Crear";
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.crearToolStripMenuItem.Text = "Agregar Usuario";
             this.crearToolStripMenuItem.Click += new System.EventHandler(this.crearToolStripMenuItem_Click);
             // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.modificarToolStripMenuItem.Text = "Modificar";
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.modificarToolStripMenuItem.Text = "Editar Usuario";
             this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.eliminarToolStripMenuItem.Text = "Eliminar Usuario";
             // 
             // buscarToolStripMenuItem
             // 
@@ -107,45 +106,16 @@
             // registroToolStripMenuItem
             // 
             this.registroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.matriculaToolStripMenuItem,
             this.matrículaToolStripMenuItem});
             this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
             this.registroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.registroToolStripMenuItem.Text = "Registro";
             // 
-            // matriculaToolStripMenuItem
-            // 
-            this.matriculaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.díaToolStripMenuItem,
-            this.mesToolStripMenuItem,
-            this.añoToolStripMenuItem});
-            this.matriculaToolStripMenuItem.Name = "matriculaToolStripMenuItem";
-            this.matriculaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.matriculaToolStripMenuItem.Text = "Fecha";
-            // 
-            // díaToolStripMenuItem
-            // 
-            this.díaToolStripMenuItem.Name = "díaToolStripMenuItem";
-            this.díaToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
-            this.díaToolStripMenuItem.Text = "Día";
-            // 
-            // mesToolStripMenuItem
-            // 
-            this.mesToolStripMenuItem.Name = "mesToolStripMenuItem";
-            this.mesToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
-            this.mesToolStripMenuItem.Text = "Mes";
-            // 
-            // añoToolStripMenuItem
-            // 
-            this.añoToolStripMenuItem.Name = "añoToolStripMenuItem";
-            this.añoToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
-            this.añoToolStripMenuItem.Text = "Año";
-            // 
             // matrículaToolStripMenuItem
             // 
             this.matrículaToolStripMenuItem.Name = "matrículaToolStripMenuItem";
             this.matrículaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.matrículaToolStripMenuItem.Text = "Matrícula";
+            this.matrículaToolStripMenuItem.Text = "Por Matrícula";
             this.matrículaToolStripMenuItem.Click += new System.EventHandler(this.matrículaToolStripMenuItem_Click);
             // 
             // catalogoToolStripMenuItem
@@ -158,15 +128,31 @@
             // 
             // alumnosRegistradosToolStripMenuItem
             // 
+            this.alumnosRegistradosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.matrículaToolStripMenuItem1,
+            this.porAlumnoToolStripMenuItem});
             this.alumnosRegistradosToolStripMenuItem.Name = "alumnosRegistradosToolStripMenuItem";
-            this.alumnosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.alumnosRegistradosToolStripMenuItem.Text = "Alumnos Registrados";
+            this.alumnosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.alumnosRegistradosToolStripMenuItem.Text = "Entradas y Salidas";
+            // 
+            // matrículaToolStripMenuItem1
+            // 
+            this.matrículaToolStripMenuItem1.Name = "matrículaToolStripMenuItem1";
+            this.matrículaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.matrículaToolStripMenuItem1.Text = "Por Fecha";
+            // 
+            // porAlumnoToolStripMenuItem
+            // 
+            this.porAlumnoToolStripMenuItem.Name = "porAlumnoToolStripMenuItem";
+            this.porAlumnoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.porAlumnoToolStripMenuItem.Text = "Por Alumno";
+            this.porAlumnoToolStripMenuItem.Click += new System.EventHandler(this.porAlumnoToolStripMenuItem_Click);
             // 
             // VenAdminP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WindowsApp.Properties.Resources.AdminFinal1;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -191,12 +177,10 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem matriculaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem díaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem añoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem matrículaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem catalogoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alumnosRegistradosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem matrículaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem porAlumnoToolStripMenuItem;
     }
 }
