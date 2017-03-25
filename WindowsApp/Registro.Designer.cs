@@ -49,6 +49,8 @@
             this.cboGrado = new System.Windows.Forms.ComboBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.cboCampus = new System.Windows.Forms.ComboBox();
+            this.lblCampus = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +60,7 @@
             this.lblMatricula.BackColor = System.Drawing.Color.Transparent;
             this.lblMatricula.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMatricula.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblMatricula.Location = new System.Drawing.Point(236, 223);
+            this.lblMatricula.Location = new System.Drawing.Point(236, 226);
             this.lblMatricula.Name = "lblMatricula";
             this.lblMatricula.Size = new System.Drawing.Size(98, 23);
             this.lblMatricula.TabIndex = 0;
@@ -80,7 +82,7 @@
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblNombre.Location = new System.Drawing.Point(249, 259);
+            this.lblNombre.Location = new System.Drawing.Point(249, 258);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(85, 23);
             this.lblNombre.TabIndex = 2;
@@ -92,7 +94,7 @@
             this.lblApellidoP.BackColor = System.Drawing.Color.Transparent;
             this.lblApellidoP.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellidoP.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblApellidoP.Location = new System.Drawing.Point(169, 295);
+            this.lblApellidoP.Location = new System.Drawing.Point(169, 290);
             this.lblApellidoP.Name = "lblApellidoP";
             this.lblApellidoP.Size = new System.Drawing.Size(165, 23);
             this.lblApellidoP.TabIndex = 3;
@@ -104,7 +106,7 @@
             this.lblApellidoM.BackColor = System.Drawing.Color.Transparent;
             this.lblApellidoM.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellidoM.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblApellidoM.Location = new System.Drawing.Point(163, 331);
+            this.lblApellidoM.Location = new System.Drawing.Point(163, 322);
             this.lblApellidoM.Name = "lblApellidoM";
             this.lblApellidoM.Size = new System.Drawing.Size(171, 23);
             this.lblApellidoM.TabIndex = 4;
@@ -116,7 +118,7 @@
             this.lblCarrera.BackColor = System.Drawing.Color.Transparent;
             this.lblCarrera.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCarrera.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblCarrera.Location = new System.Drawing.Point(253, 367);
+            this.lblCarrera.Location = new System.Drawing.Point(253, 386);
             this.lblCarrera.Name = "lblCarrera";
             this.lblCarrera.Size = new System.Drawing.Size(81, 23);
             this.lblCarrera.TabIndex = 5;
@@ -128,7 +130,7 @@
             this.lblGrado.BackColor = System.Drawing.Color.Transparent;
             this.lblGrado.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGrado.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblGrado.Location = new System.Drawing.Point(264, 400);
+            this.lblGrado.Location = new System.Drawing.Point(264, 418);
             this.lblGrado.Name = "lblGrado";
             this.lblGrado.Size = new System.Drawing.Size(70, 23);
             this.lblGrado.TabIndex = 6;
@@ -140,7 +142,7 @@
             this.lblPassword1.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword1.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPassword1.Location = new System.Drawing.Point(217, 428);
+            this.lblPassword1.Location = new System.Drawing.Point(217, 450);
             this.lblPassword1.Name = "lblPassword1";
             this.lblPassword1.Size = new System.Drawing.Size(117, 23);
             this.lblPassword1.TabIndex = 7;
@@ -152,7 +154,7 @@
             this.lblPassword2.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword2.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPassword2.Location = new System.Drawing.Point(122, 466);
+            this.lblPassword2.Location = new System.Drawing.Point(129, 482);
             this.lblPassword2.Name = "lblPassword2";
             this.lblPassword2.Size = new System.Drawing.Size(212, 23);
             this.lblPassword2.TabIndex = 8;
@@ -164,7 +166,7 @@
             this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
             this.lblCorreo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblCorreo.Location = new System.Drawing.Point(261, 497);
+            this.lblCorreo.Location = new System.Drawing.Point(264, 514);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(73, 23);
             this.lblCorreo.TabIndex = 9;
@@ -182,7 +184,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(371, 259);
+            this.txtNombre.Location = new System.Drawing.Point(371, 255);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(201, 26);
             this.txtNombre.TabIndex = 11;
@@ -190,7 +192,7 @@
             // txtApellidoP
             // 
             this.txtApellidoP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidoP.Location = new System.Drawing.Point(371, 295);
+            this.txtApellidoP.Location = new System.Drawing.Point(371, 287);
             this.txtApellidoP.Name = "txtApellidoP";
             this.txtApellidoP.Size = new System.Drawing.Size(201, 26);
             this.txtApellidoP.TabIndex = 12;
@@ -198,7 +200,7 @@
             // txtApellidoM
             // 
             this.txtApellidoM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidoM.Location = new System.Drawing.Point(371, 331);
+            this.txtApellidoM.Location = new System.Drawing.Point(371, 319);
             this.txtApellidoM.Name = "txtApellidoM";
             this.txtApellidoM.Size = new System.Drawing.Size(201, 26);
             this.txtApellidoM.TabIndex = 13;
@@ -206,7 +208,7 @@
             // txtPassword1
             // 
             this.txtPassword1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword1.Location = new System.Drawing.Point(371, 428);
+            this.txtPassword1.Location = new System.Drawing.Point(371, 447);
             this.txtPassword1.Name = "txtPassword1";
             this.txtPassword1.Size = new System.Drawing.Size(201, 26);
             this.txtPassword1.TabIndex = 16;
@@ -215,7 +217,7 @@
             // txtPassword2
             // 
             this.txtPassword2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword2.Location = new System.Drawing.Point(371, 463);
+            this.txtPassword2.Location = new System.Drawing.Point(371, 479);
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.Size = new System.Drawing.Size(201, 26);
             this.txtPassword2.TabIndex = 17;
@@ -224,7 +226,7 @@
             // txtCorreo
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(371, 497);
+            this.txtCorreo.Location = new System.Drawing.Point(371, 511);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(201, 26);
             this.txtCorreo.TabIndex = 18;
@@ -233,7 +235,7 @@
             // 
             this.cboCarrera.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCarrera.FormattingEnabled = true;
-            this.cboCarrera.Location = new System.Drawing.Point(371, 363);
+            this.cboCarrera.Location = new System.Drawing.Point(371, 383);
             this.cboCarrera.Name = "cboCarrera";
             this.cboCarrera.Size = new System.Drawing.Size(201, 26);
             this.cboCarrera.TabIndex = 14;
@@ -242,7 +244,7 @@
             // 
             this.cboGrado.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboGrado.FormattingEnabled = true;
-            this.cboGrado.Location = new System.Drawing.Point(371, 394);
+            this.cboGrado.Location = new System.Drawing.Point(371, 415);
             this.cboGrado.Name = "cboGrado";
             this.cboGrado.Size = new System.Drawing.Size(201, 26);
             this.cboGrado.TabIndex = 15;
@@ -250,7 +252,7 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(371, 544);
+            this.btnRegistrar.Location = new System.Drawing.Point(371, 555);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(94, 54);
             this.btnRegistrar.TabIndex = 19;
@@ -261,13 +263,34 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(478, 544);
+            this.btnSalir.Location = new System.Drawing.Point(478, 555);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(94, 54);
             this.btnSalir.TabIndex = 20;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // cboCampus
+            // 
+            this.cboCampus.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCampus.FormattingEnabled = true;
+            this.cboCampus.Location = new System.Drawing.Point(371, 351);
+            this.cboCampus.Name = "cboCampus";
+            this.cboCampus.Size = new System.Drawing.Size(201, 26);
+            this.cboCampus.TabIndex = 22;
+            // 
+            // lblCampus
+            // 
+            this.lblCampus.AutoSize = true;
+            this.lblCampus.BackColor = System.Drawing.Color.Transparent;
+            this.lblCampus.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCampus.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblCampus.Location = new System.Drawing.Point(246, 354);
+            this.lblCampus.Name = "lblCampus";
+            this.lblCampus.Size = new System.Drawing.Size(88, 23);
+            this.lblCampus.TabIndex = 21;
+            this.lblCampus.Text = "Campus";
             // 
             // Registro
             // 
@@ -278,6 +301,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1253, 656);
             this.ControlBox = false;
+            this.Controls.Add(this.cboCampus);
+            this.Controls.Add(this.lblCampus);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.cboGrado);
@@ -335,5 +360,7 @@
         private System.Windows.Forms.ComboBox cboGrado;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.ComboBox cboCampus;
+        private System.Windows.Forms.Label lblCampus;
     }
 }

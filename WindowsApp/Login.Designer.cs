@@ -70,7 +70,7 @@
             this.lblMatricula.Name = "lblMatricula";
             this.lblMatricula.Size = new System.Drawing.Size(188, 44);
             this.lblMatricula.TabIndex = 2;
-            this.lblMatricula.Text = "Matricula";
+            this.lblMatricula.Text = "Matrícula";
             // 
             // lblPassword
             // 

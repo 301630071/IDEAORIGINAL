@@ -24,6 +24,13 @@ namespace WindowsApp
             cboCarrera.ValueMember = "Id";
             #endregion
 
+            #region Combo Campus BD
+            cboCampus.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboCampus.DataSource = BusinessLogicLayer.CampusBLL.cargarComboBox();
+            cboCampus.DisplayMember = "Nombre";
+            cboCampus.ValueMember = "Id";
+            #endregion
+
             #region Combo Grado 
             cboGrado.DropDownStyle = ComboBoxStyle.DropDownList;
             cboGrado.Items.Add("PRIMERO");
@@ -57,6 +64,7 @@ namespace WindowsApp
                 u.Apellido1 = txtApellidoP.Text.ToString();
                 u.Apellido2 = txtApellidoM.Text.ToString();
                 u.IdCarrera = Convert.ToInt32(cboCarrera.SelectedValue.ToString());
+                u.IdCampus = Convert.ToInt32(cboCampus.SelectedValue.ToString());
                 u.Grado = cboGrado.SelectedItem.ToString();
                 u.Password1 = txtPassword1.Text.ToString();
                 u.Password2 = txtPassword2.Text.ToString();

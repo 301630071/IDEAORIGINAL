@@ -60,6 +60,18 @@
     <Compile Include="AdminAgregar.Designer.cs">
       <DependentUpon>AdminAgregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuscarRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarRegistro.Designer.cs">
+      <DependentUpon>BuscarRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarAl.Designer.cs">
+      <DependentUpon>ConsultarAl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,12 @@
     </Compile>
     <EmbeddedResource Include="AdminAgregar.resx">
       <DependentUpon>AdminAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarRegistro.resx">
+      <DependentUpon>BuscarRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarAl.resx">
+      <DependentUpon>ConsultarAl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

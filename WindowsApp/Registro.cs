@@ -25,6 +25,13 @@ namespace WindowsApp
             cboCarrera.ValueMember = "Id";
             #endregion
 
+            #region Combo Campus BD
+            cboCampus.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboCampus.DataSource = BusinessLogicLayer.CampusBLL.cargarComboBox();
+            cboCampus.DisplayMember = "Nombre";
+            cboCampus.ValueMember = "Id";
+            #endregion
+
             #region Cuadros de Texto MaxLength
             txtMatricula.MaxLength = 9;
             txtNombre.MaxLength = 50;
@@ -55,6 +62,7 @@ namespace WindowsApp
             u.Nombre = txtNombre.Text.ToString();
             u.Apellido1 = txtApellidoP.Text.ToString();
             u.Apellido2 = txtApellidoM.Text.ToString();
+            u.IdCampus = Convert.ToInt32(cboCampus.SelectedValue.ToString());
             u.IdCarrera = Convert.ToInt32(cboCarrera.SelectedValue.ToString());
             u.Grado = cboGrado.SelectedItem.ToString();
             u.Password1 = txtPassword1.Text.ToString();

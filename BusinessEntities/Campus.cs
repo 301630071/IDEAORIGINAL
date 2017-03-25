@@ -9,7 +9,7 @@ namespace BusinessEntities
     public class Campus
     {
         public int Id { get; set; }
-        public int Nombre { get; set; }
+        public string Nombre { get; set; }
 
     }
 }

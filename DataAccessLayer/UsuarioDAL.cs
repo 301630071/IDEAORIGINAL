@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,7 +44,7 @@ namespace DataAccessLayer
                 //5° - Agregar los parametros necesarios
                 cmd.Parameters.AddWithValue("@matricula", matricula);
                 cmd.Parameters.AddWithValue("@password", pwd);
-                
+
 
                 //6° - Ejecutar el query y guardar el resultado
                 MySqlDataReader dr = cmd.ExecuteReader();
@@ -90,7 +91,7 @@ namespace DataAccessLayer
                 sqlConn.Open();
 
                 //3. Crear el query que utilizaras
-                string query = "INSERT INTO Usuario (Matricula, Nombre, Apellido1, Apellido2, IdCarrera, Grado, Password1, Password2, Correo) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @carrera, @grado, @password1, @password2, @correo )";
+                string query = "INSERT INTO Usuario (Matricula, Nombre, Apellido1, Apellido2, IdCampus, IdCarrera, Grado, Password1, Password2, Correo) VALUES (@matricula, @nombre, @apellidoP, @apellidoM, @campus, @carrera, @grado, @password1, @password2, @correo )";
 
                 //4° - Crear el objeto comando al cual le pasas el query
                 //y la conexion para ejecutar el query antes mencionado
@@ -101,6 +102,7 @@ namespace DataAccessLayer
                 cmd.Parameters.AddWithValue("@nombre", u.Nombre);
                 cmd.Parameters.AddWithValue("@apellidoP", u.Apellido1);
                 cmd.Parameters.AddWithValue("@apellidoM", u.Apellido2);
+                cmd.Parameters.AddWithValue("@campus", u.IdCampus);
                 cmd.Parameters.AddWithValue("@carrera", u.IdCarrera);
                 cmd.Parameters.AddWithValue("@grado", u.Grado);
                 cmd.Parameters.AddWithValue("@password1", u.Password1);
@@ -127,8 +129,209 @@ namespace DataAccessLayer
                 return false;
             }
         }
-    }
+        #endregion
+
+        #region Modificar
+        public static bool Modificar(Usuario u)
+        {
+            try
+            {
+                //1. Creamos objeto conexion y le pasamos la cadena de conexión
+                //ubicada en el archivo App.Config
+                MySqlConnection sqlConn = new MySqlConnection(CONNECTIONSTRING);
+
+
+                //2. Abrir la conexion
+                sqlConn.Open();
+
+                //3. Crear el query que utilizaras
+                string query = "UPDATE Usuario SET Matricula = @matricula  , Nombre = @nombre, Apellido1 = @apellidoP, Apellido2 = @apellidoM, IdCampus = @campus, IdCarrera = @carrera, Grado = @grado, Password1 = @password1, Password2 = @password2, Correo = @correo";
+
+                //4° - Crear el objeto comando al cual le pasas el query
+                //y la conexion para ejecutar el query antes mencionado
+                MySqlCommand cmd = new MySqlCommand(query, sqlConn);
+
+                //5° - Agregar los parametros necesarios
+                cmd.Parameters.AddWithValue("@matricula", u.Matricula);
+                cmd.Parameters.AddWithValue("@nombre", u.Nombre);
+                cmd.Parameters.AddWithValue("@apellidoP", u.Apellido1);
+                cmd.Parameters.AddWithValue("@apellidoM", u.Apellido2);
+                cmd.Parameters.AddWithValue("@campus", u.IdCampus);
+                cmd.Parameters.AddWithValue("@carrera", u.IdCarrera);
+                cmd.Parameters.AddWithValue("@grado", u.Grado);
+                cmd.Parameters.AddWithValue("@password1", u.Password1);
+                cmd.Parameters.AddWithValue("@password2", u.Password2);
+                cmd.Parameters.AddWithValue("@correo", u.Correo);
+
+                //6° - Ejecutar el query y guardar el resultado
+                int ENQ = cmd.ExecuteNonQuery();
+
+                //7° - Validar si contiene registros
+                if (ENQ > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+                sqlConn.Close();
+            }
+
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        #endregion
+
+        #region Consultar
+        //DATA SET - Objeto que te permite guardar datos de un DataReader
+        public static DataTable Consultar(Usuario u)
+        {
+            var dt = new DataTable();
+            try
+            {
+                //1. Creamos objeto conexion y le pasamos la cadena de conexión
+                //ubicada en el archivo App.Config
+                MySqlConnection sqlConn = new MySqlConnection(CONNECTIONSTRING);
+
+
+                //2. Abrir la conexion
+                sqlConn.Open();
+
+                //3. Crear el query que utilizaras
+                string query = "SELECT Matricula, Nombre, Apellido1, Apellido2, Password1, Password2, IdCarrera, Grado, Correo FROM  Usuario WHERE Matricula = @matricula";
+
+                //4° - Crear el objeto comando al cual le pasas el query
+                //y la conexion para ejecutar el query antes mencionado
+                MySqlCommand cmd = new MySqlCommand(query, sqlConn);
+
+                //5° - Agregar los parametros necesarios
+                cmd.Parameters.AddWithValue("@matricula", u.Matricula);
+                cmd.Parameters.AddWithValue("@nombre", u.Nombre);
+                cmd.Parameters.AddWithValue("@apellidoP", u.Apellido1);
+                cmd.Parameters.AddWithValue("@apellidoM", u.Apellido2);
+                cmd.Parameters.AddWithValue("@campus", u.IdCampus);
+                cmd.Parameters.AddWithValue("@carrera", u.IdCarrera);
+                cmd.Parameters.AddWithValue("@grado", u.Grado);
+                cmd.Parameters.AddWithValue("@password1", u.Password1);
+                cmd.Parameters.AddWithValue("@password2", u.Password2);
+                cmd.Parameters.AddWithValue("@correo", u.Correo);
+
+                
+
+                //6° - Ejecutar el query y guardar el resultado
+                MySqlDataReader ENQ = cmd.ExecuteReader();
+
+                
+
+
+                //7° - Validar si contiene registros
+                if (ENQ.HasRows)
+                {
+
+                    dt.Load(ENQ);
+                    //while (ENQ.Read())
+                    //{
+                    //    dt.Rows.Add(ENQ["Matricula"].ToString(), ENQ ["Nombre"]);
+
+
+                    //string Matricula = ENQ.GetString(0);
+                    //string Nombre = ENQ.GetString(1);
+                    //string Apellido1 = ENQ.GetString(2);
+                    //string Apellido2 = ENQ.GetString(3);
+                    //string Password1 = ENQ.GetString(4);
+                    //string Password2 = ENQ.GetString(5);
+                    //int IdCarrera = ENQ.GetInt32(6);
+                    //string Grado = ENQ.GetString(7);
+                    //string Correo = ENQ.GetString(8);
+                    //}
+                    return dt;
+
+                    }
+                    else
+                    {
+                    return dt;
+                    }
+                    sqlConn.Close();
+                }
+
+            catch (Exception ex)
+            {
+                return dt;
+            }
+        }
+        #endregion
+
+
+        #region ConsultarHistorial
+        public static DataTable ConsultarHistorial(Usuario u)
+        {
+            var dt = new DataTable();
+            try
+            {
+                //1. Creamos objeto conexion y le pasamos la cadena de conexión
+                //ubicada en el archivo App.Config
+                MySqlConnection sqlConn = new MySqlConnection(CONNECTIONSTRING);
+
+
+                //2. Abrir la conexion
+                sqlConn.Open();
+
+                //3. Crear el query que utilizaras
+                string query = "select u.Matricula as MATRICULA, u.Nombre as NOMBRE, u.Apellido1 as APELLIDO_PATERNO, u.Apellido2 as APELLIDO_MATERNO, u.IdCampus as CAMPUS, u.IdCarrera as CARRERA, u.Grado as GRADO, r.fechayhora as FECHA_HORA, IF(r.TipoRegistro = 1, 'Entrada', 'Salida')as TIPO from Registro r inner join usuario u on r.IdUsuario = u.Id where u.Matricula = @matricula"; 
+
+                //4° - Crear el objeto comando al cual le pasas el query
+                //y la conexion para ejecutar el query antes mencionado
+                MySqlCommand cmd = new MySqlCommand(query, sqlConn);
+
+                //5° - Agregar los parametros necesarios
+                cmd.Parameters.AddWithValue("@matricula", u.Matricula);
+                
+
+                //6° - Ejecutar el query y guardar el resultado
+                MySqlDataReader ENQ = cmd.ExecuteReader();
+
+
+                //7° - Validar si contiene registros
+                if (ENQ.HasRows)
+                {
+
+                    dt.Load(ENQ);
+                    //while (ENQ.Read())
+                    //{
+                    //    dt.Rows.Add(ENQ["Matricula"].ToString(), ENQ ["Nombre"]);
+
+
+                    //string Matricula = ENQ.GetString(0);
+                    //string Nombre = ENQ.GetString(1);
+                    //string Apellido1 = ENQ.GetString(2);
+                    //string Apellido2 = ENQ.GetString(3);
+                    //string Password1 = ENQ.GetString(4);
+                    //string Password2 = ENQ.GetString(5);
+                    //int IdCarrera = ENQ.GetInt32(6);
+                    //string Grado = ENQ.GetString(7);
+                    //string Correo = ENQ.GetString(8);
+                    //}
+                    return dt;
+
+                }
+                else
+                {
+                    return dt;
+                }
+                sqlConn.Close();
+            }
+
+            catch (Exception ex)
+            {
+                return dt;
+            }
+        }
     #endregion
+    }
+
 
 }
 
