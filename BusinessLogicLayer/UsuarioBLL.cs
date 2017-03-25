@@ -11,10 +11,12 @@ namespace BusinessLogicLayer
 
     public class UsuarioBLL
     {
+        #region Obtener Id Usuario
         public static int obtenerIdUsuario(string Matricula)
         {
             return DataAccessLayer.UsuarioDAL.obtenerIdUsuario(Matricula);
         }
+        #endregion
 
         #region iniciarSesion
         public static string iniciarSesion(string matricula, string pwd)
@@ -137,40 +139,23 @@ namespace BusinessLogicLayer
         }
         #endregion
 
+        #region Consultar
         public static DataTable Consultar(Usuario u)
         {
             string mensaje = "";
             DataTable conexion = DataAccessLayer.UsuarioDAL.Consultar(u);
             return conexion;
-
-
-            //if (conexion == true)
-            //{
-            //    return "";
-            //}
-            //else
-            //{
-            //    mensaje = "No se pudo registrar correctamente";
-            //    return mensaje;
-            //}
         }
+        #endregion
+
+        #region Consultar Historial
         public static DataTable ConsultarHistorial(Usuario u)
         {
             string mensaje = "";
             DataTable conexion = DataAccessLayer.UsuarioDAL.ConsultarHistorial(u);
             return conexion;
-
-
-            //if (conexion == true)
-            //{
-            //    return "";
-            //}
-            //else
-            //{
-            //    mensaje = "No se pudo registrar correctamente";
-            //    return mensaje;
-            //}
         }
+        #endregion
 
     }
 }

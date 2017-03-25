@@ -22,5 +22,16 @@ namespace WindowsApp
             AdminAgregar add = new AdminAgregar();
             add.Show();
         }
+
+        private void matrículaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BuscarRegistro bus = new BuscarRegistro();
+            bus.Show();
+        }
+
+        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

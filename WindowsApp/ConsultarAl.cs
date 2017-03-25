@@ -9,8 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsApp
 {
+    #region Consultar Alumno
     public partial class ConsultarAl : Form
     {
         public ConsultarAl()
@@ -18,21 +20,17 @@ namespace WindowsApp
             InitializeComponent();
         }
 
+        #region Boton Buscar
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             Usuario u = new Usuario();
             u.Matricula = txtMatricula.Text;
             DataTable mensaje = BusinessLogicLayer.UsuarioBLL.ConsultarHistorial(u);
-
-
             dgbMostrar.DataSource = mensaje;
-
-            //foreach = (por cada fila en mensaje)
-            //foreach (DataRow row in mensaje.Rows)
-            {
-                //dgbMostrar = row["Matricula"].ToString();
-                
-            }
         }
+        #endregion
+
+
     }
+    #endregion
 }

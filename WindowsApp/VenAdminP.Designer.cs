@@ -40,7 +40,6 @@
             this.díaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.añoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nombreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matrículaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catalogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnosRegistradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,6 +88,7 @@
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
             this.modificarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.modificarToolStripMenuItem.Text = "Modificar";
+            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
@@ -108,10 +108,9 @@
             // 
             this.registroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.matriculaToolStripMenuItem,
-            this.nombreToolStripMenuItem,
             this.matrículaToolStripMenuItem});
             this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
-            this.registroToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.registroToolStripMenuItem.Text = "Registro";
             // 
             // matriculaToolStripMenuItem
@@ -121,7 +120,7 @@
             this.mesToolStripMenuItem,
             this.añoToolStripMenuItem});
             this.matriculaToolStripMenuItem.Name = "matriculaToolStripMenuItem";
-            this.matriculaToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.matriculaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.matriculaToolStripMenuItem.Text = "Fecha";
             // 
             // díaToolStripMenuItem
@@ -142,17 +141,12 @@
             this.añoToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.añoToolStripMenuItem.Text = "Año";
             // 
-            // nombreToolStripMenuItem
-            // 
-            this.nombreToolStripMenuItem.Name = "nombreToolStripMenuItem";
-            this.nombreToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.nombreToolStripMenuItem.Text = "Nombre";
-            // 
             // matrículaToolStripMenuItem
             // 
             this.matrículaToolStripMenuItem.Name = "matrículaToolStripMenuItem";
-            this.matrículaToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.matrículaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.matrículaToolStripMenuItem.Text = "Matrícula";
+            this.matrículaToolStripMenuItem.Click += new System.EventHandler(this.matrículaToolStripMenuItem_Click);
             // 
             // catalogoToolStripMenuItem
             // 
@@ -201,7 +195,6 @@
         private System.Windows.Forms.ToolStripMenuItem díaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem añoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nombreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem matrículaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem catalogoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alumnosRegistradosToolStripMenuItem;

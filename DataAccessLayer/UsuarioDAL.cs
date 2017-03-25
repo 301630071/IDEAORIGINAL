@@ -186,7 +186,7 @@ namespace DataAccessLayer
         #endregion
 
         #region Consultar
-        //DATA SET - Objeto que te permite guardar datos de un DataReader
+        
         public static DataTable Consultar(Usuario u)
         {
             var dt = new DataTable();
@@ -201,7 +201,7 @@ namespace DataAccessLayer
                 sqlConn.Open();
 
                 //3. Crear el query que utilizaras
-                string query = "SELECT Matricula, Nombre, Apellido1, Apellido2, Password1, Password2, IdCarrera, Grado, Correo FROM  Usuario WHERE Matricula = @matricula";
+                string query = "SELECT Matricula, Nombre, Apellido1, Apellido2, Password1, Password2, IdCarrera , IdCampus, Grado, Correo FROM  Usuario WHERE Matricula = @matricula";
 
                 //4° - Crear el objeto comando al cual le pasas el query
                 //y la conexion para ejecutar el query antes mencionado
@@ -232,21 +232,7 @@ namespace DataAccessLayer
                 {
 
                     dt.Load(ENQ);
-                    //while (ENQ.Read())
-                    //{
-                    //    dt.Rows.Add(ENQ["Matricula"].ToString(), ENQ ["Nombre"]);
-
-
-                    //string Matricula = ENQ.GetString(0);
-                    //string Nombre = ENQ.GetString(1);
-                    //string Apellido1 = ENQ.GetString(2);
-                    //string Apellido2 = ENQ.GetString(3);
-                    //string Password1 = ENQ.GetString(4);
-                    //string Password2 = ENQ.GetString(5);
-                    //int IdCarrera = ENQ.GetInt32(6);
-                    //string Grado = ENQ.GetString(7);
-                    //string Correo = ENQ.GetString(8);
-                    //}
+                    
                     return dt;
 
                     }
@@ -263,7 +249,6 @@ namespace DataAccessLayer
             }
         }
         #endregion
-
 
         #region ConsultarHistorial
         public static DataTable ConsultarHistorial(Usuario u)
@@ -299,21 +284,7 @@ namespace DataAccessLayer
                 {
 
                     dt.Load(ENQ);
-                    //while (ENQ.Read())
-                    //{
-                    //    dt.Rows.Add(ENQ["Matricula"].ToString(), ENQ ["Nombre"]);
-
-
-                    //string Matricula = ENQ.GetString(0);
-                    //string Nombre = ENQ.GetString(1);
-                    //string Apellido1 = ENQ.GetString(2);
-                    //string Apellido2 = ENQ.GetString(3);
-                    //string Password1 = ENQ.GetString(4);
-                    //string Password2 = ENQ.GetString(5);
-                    //int IdCarrera = ENQ.GetInt32(6);
-                    //string Grado = ENQ.GetString(7);
-                    //string Correo = ENQ.GetString(8);
-                    //}
+                    
                     return dt;
 
                 }

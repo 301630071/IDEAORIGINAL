@@ -27,7 +27,14 @@ namespace WindowsApp
             //foreach = (por cada fila en mensaje)
             foreach (DataRow row in mensaje.Rows)
             {
-                txtResultado.Text = row["Matricula"].ToString();
+                txtNombres.Text = row["Nombre"].ToString();
+                txtApellido1.Text = row["Apellido1"].ToString();
+                txtApellido2.Text = row["Apellido2"].ToString();
+                txtCampus.Text = row["IdCampus"].ToString();
+                txtCarrera.Text = row["IdCarrera"].ToString();
+                txtGrado.Text = row["Grado"].ToString();
+                txtPassword1.Text = row["Password1"].ToString();
+                txtCorreo.Text = row["Correo"].ToString();
             }
         }
     }

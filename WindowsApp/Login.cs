@@ -17,18 +17,21 @@ namespace WindowsApp
         {
             InitializeComponent();
 
+            #region Cantidad de Caracteres de los Textbox
             txtMatricula.MaxLength = 9;
             txtPassword.MaxLength = 15;
-
+            #endregion
         }
 
-
+        #region Link para Registrarse
         private void llblRegistrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Registro abrir = new Registro();
             abrir.Show();
         }
+        #endregion
 
+        #region Boton Entrada
         private void btnEntrada_Click(object sender, EventArgs e)
         {
             string matricula = txtMatricula.Text;
@@ -52,7 +55,9 @@ namespace WindowsApp
                 MessageBox.Show(mensaje);
             }
         }
+        #endregion
 
+        #region Bloquear Letras en Cuadro de Texto Matricula
         private void txtMatricula_KeyPress(object sender, KeyPressEventArgs e)
         {
             try
@@ -76,7 +81,9 @@ namespace WindowsApp
                 throw;
             }
         }
+        #endregion
 
+        #region Boton Salida
         private void btnSalida_Click(object sender, EventArgs e)
         {
             string matricula = txtMatricula.Text;
@@ -100,6 +107,7 @@ namespace WindowsApp
                 MessageBox.Show(mensaje);
             }
         }
+        #endregion
     }
 }
 
