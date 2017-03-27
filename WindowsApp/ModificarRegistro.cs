@@ -45,6 +45,7 @@ namespace WindowsApp
 
             #region Mandar a Llamar Usuario de Entidades
             Usuario u = new Usuario();
+            u.Matricula = txtMatricula.Text.ToString();
             u.Nombre = txtNombre.Text.ToString();
             u.Apellido1 = txtApellido1.Text.ToString();
             u.Apellido2 = txtApellido2.Text.ToString();

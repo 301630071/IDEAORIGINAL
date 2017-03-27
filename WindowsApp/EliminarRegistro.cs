@@ -32,6 +32,7 @@ namespace WindowsApp
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             Usuario u = new Usuario();
+            u.Matricula = txtMatricula.Text.ToString();
             u.Estado = 0;
 
             string mensaje = BusinessLogicLayer.UsuarioBLL.Eliminar(u);

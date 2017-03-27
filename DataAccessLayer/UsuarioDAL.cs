@@ -134,7 +134,7 @@ namespace DataAccessLayer
 
         #region Modificar
         public static bool Modificar(Usuario u)
-        {
+        {   
             try
             {
                 //1. Creamos objeto conexion y le pasamos la cadena de conexión
@@ -146,14 +146,16 @@ namespace DataAccessLayer
                 sqlConn.Open();
 
                 //3. Crear el query que utilizaras
-                string query = "UPDATE Usuario SET Nombre = @nombre, Apellido1 = @apellidoP, Apellido2 = @apellidoM, IdCampus = @campus, IdCarrera = @carrera, Grado = @grado, Password1 = @password1, Password2 = @password2, Correo = @correo";
+                string query = "UPDATE Usuario SET Nombre = @nombre, Apellido1 = @apellidoP, Apellido2 = @apellidoM, IdCampus = @campus, IdCarrera = @carrera, Grado = @grado, Password1 = @password1, Password2 = @password2, Correo = @correo WHERE Matricula = @matricula";
 
                 //4° - Crear el objeto comando al cual le pasas el query
                 //y la conexion para ejecutar el query antes mencionado
                 MySqlCommand cmd = new MySqlCommand(query, sqlConn);
+               
 
                 //5° - Agregar los parametros necesarios
-                //cmd.Parameters.AddWithValue("@matricula", u.Matricula);
+                cmd.Parameters.AddWithValue("@matricula", u.Matricula);
+                cmd.Parameters.AddWithValue("@id", u.Id);
                 cmd.Parameters.AddWithValue("@nombre", u.Nombre);
                 cmd.Parameters.AddWithValue("@apellidoP", u.Apellido1);
                 cmd.Parameters.AddWithValue("@apellidoM", u.Apellido2);
@@ -164,6 +166,7 @@ namespace DataAccessLayer
                 cmd.Parameters.AddWithValue("@password2", u.Password2);
                 cmd.Parameters.AddWithValue("@correo", u.Correo);
 
+                
                 //6° - Ejecutar el query y guardar el resultado
                 int ENQ = cmd.ExecuteNonQuery();
 
@@ -221,12 +224,8 @@ namespace DataAccessLayer
                 cmd.Parameters.AddWithValue("@correo", u.Correo);
 
 
-
                 //6° - Ejecutar el query y guardar el resultado
                 MySqlDataReader ENQ = cmd.ExecuteReader();
-
-
-
 
                 //7° - Validar si contiene registros
                 if (ENQ.HasRows)
@@ -370,7 +369,7 @@ namespace DataAccessLayer
                 sqlConn.Open();
 
                 //3. Crear el query que utilizaras
-                string query = "UPDATE Usuario SET Estado = @estado";
+                string query = "UPDATE Usuario SET Estado = @estado WHERE Matricula = @matricula";
 
                 //4° - Crear el objeto comando al cual le pasas el query
                 //y la conexion para ejecutar el query antes mencionado
@@ -379,6 +378,7 @@ namespace DataAccessLayer
                 //5° - Agregar los parametros necesarios
                 //cmd.Parameters.AddWithValue("@matricula", u.Matricula);
                 cmd.Parameters.AddWithValue("@estado", u.Estado);
+                cmd.Parameters.AddWithValue("@matricula", u.Matricula);
 
                 //6° - Ejecutar el query y guardar el resultado
                 int ENQ = cmd.ExecuteNonQuery();

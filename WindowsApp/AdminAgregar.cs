@@ -53,7 +53,7 @@ namespace WindowsApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
             #region Boton Registrar
             {

@@ -46,7 +46,7 @@
             this.txtPassword1 = new System.Windows.Forms.TextBox();
             this.txtPassword2 = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.lblCampus = new System.Windows.Forms.Label();
             this.cboCampus = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -218,16 +218,16 @@
             this.txtCorreo.Size = new System.Drawing.Size(170, 22);
             this.txtCorreo.TabIndex = 17;
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(216, 329);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 36);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(216, 329);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(81, 36);
+            this.btnAgregar.TabIndex = 18;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblCampus
             // 
@@ -255,7 +255,7 @@
             this.ClientSize = new System.Drawing.Size(392, 393);
             this.Controls.Add(this.cboCampus);
             this.Controls.Add(this.lblCampus);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtPassword2);
             this.Controls.Add(this.txtPassword1);
@@ -301,7 +301,7 @@
         private System.Windows.Forms.TextBox txtPassword1;
         private System.Windows.Forms.TextBox txtPassword2;
         private System.Windows.Forms.TextBox txtCorreo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label lblCampus;
         private System.Windows.Forms.ComboBox cboCampus;
     }
